@@ -14,13 +14,13 @@
             <div class="row">
                 <div class="col-md-2">
                     <div class="logo">
-                        @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                        @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" }) @*TODO сменить на Лого*@
                     </div>
                 </div>
-                <div class="col-md-8">
+                <div class="col-md-10">
                     <ul class="nav-menu">
                         <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                        <li><a href="#">How it works</a></li> @*TODO якорь  на главной странице*@
+                        <li><a href="#">How it works?</a></li> @*TODO якорь  на главной странице*@
                         <li><a href="#">Rates & Fees</a></li> @*TODO якорь  на главной странице*@
                         <li><a href="#">Lending Policy</a></li> @*TODO якорь  на главной странице*@
                         <li>@Html.ActionLink("Terms of Use", "TermsUse", "Home")</li>
@@ -29,12 +29,7 @@
             </div>
         </div>
     </header>
-
-    <div class="container body-content">
-        @RenderBody()
-        <hr />
-        
-    </div>
+    @RenderBody()
     <footer>
         @Html.ActionLink("Disclaimer", "Disclaimer", "Home", new { area = "" }, new { @class = "navbar-brand" })
         <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
