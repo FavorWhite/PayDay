@@ -169,3 +169,37 @@ body {
     text-transform: uppercase;
 }
 /******************************************************************Jumbotron*/
+
+/**************************** Footer **********************************/
+.disclaimer-block {
+    background: #1d1d1d none repeat scroll 0 0;
+    color: #9a9a9a;
+    font-size: 12px;
+    padding: 60px 0;
+    text-align: left;
+}
+.footer-title {
+    color: #cddc39;
+    display: inline-block;
+    font-size: 18px;
+    margin: 10px;
+}
+.disclaimer-desc > p {
+    text-indent: 24px;
+}
+
+.footer {
+    background: #141414 none repeat scroll 0 0;
+    color: #73736a;
+    padding: 25px 0;
+}
+.nav-menu.footer-menu > li {
+    line-height: 1;
+}
+.nav-menu.footer-menu a {
+    color: #73736a;
+}
+.footer-site-name-block {
+    color: #7c8b02;
+}
+/******************************************************************Footer*/
