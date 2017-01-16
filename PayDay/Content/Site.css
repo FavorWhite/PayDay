@@ -169,7 +169,45 @@ body {
     text-transform: uppercase;
 }
 /******************************************************************Jumbotron*/
+/**************************** Offers **********************************/
+.container.offers-block {
+    padding: 80px 0 70px;
+}
+.offers-img-wrapper {
+    padding: 30px 0;
+    text-align: center;
+}
+.offers-img-wrapper > img {
+    display: inline-block;
+}
+.offers-title {
+    color: #212121;
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.figure-text {
+    color: #757575;
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.offer-link-wrapper {
+    text-align: center;
+}
+.offer-link {
+    text-transform: uppercase;
+    color: #3e467b;
+    display: inline-block;
+    font-weight: 600;
+}
+.offer-link:hover {
+    color: #3e467b;
+    text-decoration: none;
 
+}
+/******************************************************************Offers*/
 /**************************** Footer **********************************/
 .disclaimer-block {
     background: #1d1d1d none repeat scroll 0 0;
