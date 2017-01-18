@@ -97,6 +97,10 @@
     <Content Include="Content\images\offer1.png" />
     <Content Include="Content\images\offer2.png" />
     <Content Include="Content\images\offer3.png" />
+    <Content Include="Content\images\parallax\blue-poly-background.jpg" />
+    <Content Include="Content\images\parallax\green-poly-background.jpg" />
+    <Content Include="Content\images\parallax\home-background-1.jpg" />
+    <Content Include="Content\images\parallax\how-it-works-background.jpg" />
     <Content Include="Content\Site.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />

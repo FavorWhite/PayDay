@@ -208,6 +208,33 @@ body {
 
 }
 /******************************************************************Offers*/
+/**************************** Parallax **********************************/
+.parallax {
+          /* The image used */
+    background-image: url('images/parallax/blue-poly-background.jpg');
+
+    /* Full height */
+    height: 100%; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding:200px 0;
+}
+.parallax__layer {
+    color: #fff;
+    text-align: center;
+}
+.get-money-block-slogon {
+    color: #cddc39;
+    font-size: 26px;
+    font-weight: 500;
+    margin-top: 15px;
+    text-transform: uppercase;
+}
+/******************************************************************Parallax*/
 /**************************** Footer **********************************/
 .disclaimer-block {
     background: #1d1d1d none repeat scroll 0 0;
