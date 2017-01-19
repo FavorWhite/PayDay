@@ -56,8 +56,12 @@ body {
 }
 
 .header {
+    background: #fff none repeat scroll 0 0;
     box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.1);
-    height: 100px;
+    height: 80px;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
 }
 
 .nav-menu {
@@ -67,7 +71,7 @@ body {
 
     .nav-menu li {
         display: inline-block;
-        line-height: 100px;
+        line-height: 80px;
         padding: 0 10px;
     }
 
@@ -115,14 +119,17 @@ body {
     font-weight: 400;
     line-height: 32px;
 }
+
 .sub-slogon {
     margin-bottom: 40px;
 }
+
 .button_wrap {
     display: inline-block;
     padding: 20px 20px 0 0;
 }
-.main-img-button {
+
+.style-button {
     background-color: #3e467b;
     border-radius: 25px;
     color: #fff;
@@ -133,35 +140,48 @@ body {
     text-transform: uppercase;
     transition: all 0.3s ease-in-out 0s;
 }
-.main-img-button:hover {
+
+    .style-button:hover {
+        background-color: #CDDC39;
+        text-decoration: none;
+        color: #fff;
+    }
+
+.style-button-invert {
     background-color: #CDDC39;
-    text-decoration: none;
-    color: #fff;
 }
-.button-style-invert {
-     background-color: #CDDC39;
+
+    .style-button-invert:hover {
+        background-color: #3e467b;
+    }
+
+.white-hover-button:hover {
+    background-color: #fff;
+    color: #393D7D;
 }
-.button-style-invert:hover{
-     background-color: #3e467b;
-}
+
 .main-form-wrapper {
     background: transparent none repeat scroll 0 0;
     border: 20px solid transparent;
     height: 600px;
 }
+
 .main-form-info-wrapper {
     background: #fff none repeat scroll 0 0;
     height: 100%;
     padding: 50px 40px;
 }
+
 .main-form_text {
     text-align: center;
 }
-.form-question-rectification{
+
+.form-question-rectification {
     margin-bottom: 22px;
     margin-top: 3px;
     text-align: center;
 }
+
 .title-h5 {
     color: #3e467b;
     font-size: 14px;
@@ -171,21 +191,25 @@ body {
 /******************************************************************Jumbotron*/
 /**************************** Offers **********************************/
 .container.offers-block {
-    padding: 80px 0 70px;
+    padding: 60px 0 70px;
 }
+
 .offers-img-wrapper {
     padding: 30px 0;
     text-align: center;
 }
-.offers-img-wrapper > img {
-    display: inline-block;
-}
+
+    .offers-img-wrapper > img {
+        display: inline-block;
+    }
+
 .offers-title {
     color: #212121;
     font-size: 24px;
     margin-bottom: 20px;
     text-align: center;
 }
+
 .figure-text {
     color: #757575;
     font-size: 14px;
@@ -193,47 +217,89 @@ body {
     margin-bottom: 30px;
     text-align: center;
 }
+
 .offer-link-wrapper {
     text-align: center;
 }
+
 .offer-link {
     text-transform: uppercase;
     color: #3e467b;
     display: inline-block;
     font-weight: 600;
 }
-.offer-link:hover {
-    color: #3e467b;
-    text-decoration: none;
 
-}
+    .offer-link:hover {
+        color: #3e467b;
+        text-decoration: none;
+    }
 /******************************************************************Offers*/
 /**************************** Parallax **********************************/
 .parallax {
-          /* The image used */
-    background-image: url('images/parallax/blue-poly-background.jpg');
-
     /* Full height */
-    height: 100%; 
-
+    height: 100%;
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding:200px 0;
+    padding: 100px 0;
+    position: relative;
 }
+
+.get-money-block {
+    background-image: url('images/parallax/blue-poly-background.jpg');
+}
+
 .parallax__layer {
     color: #fff;
     text-align: center;
 }
+
+.get-text {
+    margin: 30px 0 45px;
+}
+
 .get-money-block-slogon {
     color: #cddc39;
     font-size: 26px;
     font-weight: 500;
+    margin-bottom: 75px;
     margin-top: 15px;
     text-transform: uppercase;
 }
+
+.how-it-works-block {
+    background-image: url('images/parallax/green-poly-background.jpg');
+}
+
+.blue-triangle::after {
+    background-color: #393D7D;
+}
+
+.green-triangle::after {
+    background-color: #BDC651;
+}
+
+.triangle::after {
+    bottom: auto;
+    content: "";
+    height: 30px;
+    left: 0;
+    margin: auto !important;
+    position: absolute;
+    right: 0;
+    top: -15px;
+    transform: rotate(45deg);
+    width: 30px;
+    z-index: 1;
+}
+
+.triangle::after {
+    bottom: -15px;
+    top: auto;
+}
+
 /******************************************************************Parallax*/
 /**************************** Footer **********************************/
 .disclaimer-block {
@@ -243,12 +309,14 @@ body {
     padding: 60px 0;
     text-align: left;
 }
+
 .footer-title {
     color: #cddc39;
     display: inline-block;
     font-size: 18px;
     margin: 10px;
 }
+
 .disclaimer-desc > p {
     text-indent: 24px;
 }
@@ -258,12 +326,15 @@ body {
     color: #73736a;
     padding: 25px 0;
 }
+
 .nav-menu.footer-menu > li {
     line-height: 1;
 }
+
 .nav-menu.footer-menu a {
     color: #73736a;
 }
+
 .footer-site-name-block {
     color: #7c8b02;
 }
