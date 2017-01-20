@@ -247,7 +247,7 @@ body {
     position: relative;
 }
 
-.get-money-block {
+.get-money-step-block {
     background-image: url('images/parallax/blue-poly-background.jpg');
 }
 
@@ -255,8 +255,18 @@ body {
     color: #fff;
     text-align: center;
 }
-
+.speed-convenience-block figure {
+    color: #212121;
+}
+.speed-convenience-step-block .title-h2 {
+    color: #333;
+}
+.speed-convenience-step-block .get-text {
+    color: #878787;
+}
 .get-text {
+    font-size: 15px;
+    line-height: 28px;
     margin: 30px 0 45px;
 }
 
@@ -269,8 +279,11 @@ body {
     text-transform: uppercase;
 }
 
-.how-it-works-block {
+.how-it-works-step-block {
     background-image: url('images/parallax/green-poly-background.jpg');
+}
+.how-it-works-block {
+    background-image: url('images/parallax/how-it-works-background.jpg');
 }
 
 .blue-triangle::after {
@@ -280,7 +293,9 @@ body {
 .green-triangle::after {
     background-color: #BDC651;
 }
-
+.white-triangle::after {
+    background: #fff;
+}
 .triangle::after {
     bottom: auto;
     content: "";
@@ -300,7 +315,40 @@ body {
     top: auto;
 }
 
+.how-it-works-list {
+    text-align: left;
+}
+.how-it-works-list .title-h5 {
+    color: #fff;
+    font-size: 16px;
+    line-height: 22px;
+}
+.how-it-works-list > li {
+    padding-left: 70px;
+    position: relative;
+}
+.fa-check::before {
+    border: 2px solid #cddc39;
+    border-radius: 50%;
+    color: #cddc39;
+    content: "";
+    font-size: 20px;
+    left: 0;
+    padding: 5px;
+    position: absolute;
+    top: 40px;
+}
+.emphasized-text {
+    color: #cddc39;
+    text-transform: uppercase;
+}
+
 /******************************************************************Parallax*/
+
+
+
+
+
 /**************************** Footer **********************************/
 .disclaimer-block {
     background: #1d1d1d none repeat scroll 0 0;
