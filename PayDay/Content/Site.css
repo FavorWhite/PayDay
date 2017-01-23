@@ -338,17 +338,86 @@ body {
     position: absolute;
     top: 40px;
 }
+.fa-question::before {
+    border: 2px solid #393d7d;
+    border-radius: 50%;
+    color: #393d7d;
+    font-size: 45px;
+    left: 0;
+    padding: 8px 20px;
+    position: absolute;
+    top: 40px;
+}
 .emphasized-text {
     color: #cddc39;
     text-transform: uppercase;
 }
-
+.rates-fees-block {
+        background-image: url('images/rates-fees-block.jpg');
+}
 /******************************************************************Parallax*/
+/**************************** QA **********************************/
+.qa-block {
+    padding: 70px 0;
+    text-align: center;
+}
+.qa-item {
+    padding: 20px 20px 20px 94px;
+    position: relative;
+    text-align: left;
+}
+.qa-title {
+    font-size: 22px;
+}
+.qa-text {
+    margin-top: 10px;
+    text-indent: 19px;
+}
+/*.underline-text {
+    border-bottom: 2px solid #cddc39;
+    color: #333;
+    display: inline-block;
+}*/
+.underline-text {
+    border-bottom: 2px solid #cddc39;
+    line-height: 2;
+}
+/******************************************************************QA*/
+/**************************** Rates-Fees **********************************/
+.rates-fees-block .underline-text {
+    color: #fff;
+}
+.rates-fees-block .title-h5 {
+    color: #cddc39;
+    font-size: 16px;
+}
+.note-text {
+    color: #bcbcbc;
+    font-size: 12px;
+    line-height: 13px;
+    padding-top: 20px;
+    text-align: left;
+}
+/******************************************************************Rates-Fees*/
+/**************************** Lending-Policy **********************************/
+.policy-block {
+    padding: 70px 0;
+    text-align: center;
+}
+.policy-item {
+    text-align: left;
+}
+.policy-item p {
+    text-indent: 15px;
+}
 
+.policy-item .title-h5 {
+    margin-left: 15px;
+      font-size: 16px;
+    color: #333;
+}
 
-
-
-
+/******************************************************************Lending-Policy*/
 /**************************** Footer **********************************/
 .disclaimer-block {
     background: #1d1d1d none repeat scroll 0 0;
