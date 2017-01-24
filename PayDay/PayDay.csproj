@@ -99,7 +99,10 @@
     <Content Include="Content\images\get-now-img2.png" />
     <Content Include="Content\images\get-now-img3.png" />
     <Content Include="Content\images\how-it-works-background.jpg" />
+    <Content Include="Content\images\mainImg-disclaimer.jpg" />
     <Content Include="Content\images\mainImg-home.jpg" />
+    <Content Include="Content\images\mainImg-policy.jpg" />
+    <Content Include="Content\images\mainImg-termsofuse.jpg" />
     <Content Include="Content\images\offer1.png" />
     <Content Include="Content\images\offer2.png" />
     <Content Include="Content\images\offer3.png" />
@@ -129,12 +132,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\DisclaimerController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\PrivacyPolicyController.cs" />
     <Compile Include="Controllers\TermsOfUseController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SiteInfo\SiteInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\web.config" />
@@ -153,6 +159,8 @@
     <Content Include="Scripts\jquery-3.1.1.min.map" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\TermsOfUse\Index.cshtml" />
+    <Content Include="Views\Disclaimer\Index.cshtml" />
+    <Content Include="Views\PrivacyPolicy\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

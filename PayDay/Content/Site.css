@@ -60,6 +60,7 @@ body {
     box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.1);
     height: 80px;
     position: fixed;
+    top: 0;
     width: 100%;
     z-index: 999;
 }
@@ -91,11 +92,24 @@ body {
 /******************************************************************Header*/
 /**************************** Jumbotron **********************************/
 .jumbotron-custom {
-    background-image: url("../Content/images/mainimg-home.jpg");
+    background-image: url("../Content/images/mainimg-home.jpg"); 
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     padding: 120px 0;
+    margin-top: 80px;
+}
+.jumbotron-custom-disclaimer {
+        background-image: url("../Content/images/mainImg-disclaimer.jpg"); 
+}
+.jumbotron-custom-policy {
+        background-image: url("../Content/images/mainImg-policy.jpg"); 
+}
+.jumbotron-custom-termsofuse {
+        background-image: url("../Content/images/mainImg-termsofuse.jpg"); 
+}
+.jumbotron-custom-disclaimer,.jumbotron-custom-policy,.jumbotron-custom-termsofuse {
+    text-align: center;
 }
 
 .jumbotron-slogon {
@@ -131,6 +145,7 @@ body {
 
 .style-button {
     background-color: #3e467b;
+    display: inline-block;
     border-radius: 25px;
     color: #fff;
     display: inline-block;
@@ -138,6 +153,7 @@ body {
     line-height: 50px;
     padding: 0 33px;
     text-transform: uppercase;
+    cursor: pointer;
     transition: all 0.3s ease-in-out 0s;
 }
 
@@ -418,6 +434,26 @@ body {
 }
 
 /******************************************************************Lending-Policy*/
+
+/**************************** Privacy Table **********************************/
+.privacy-policy-block {
+    padding: 70px 0;
+}
+.privacy-table {
+    margin-bottom: 20px;
+}
+.privacy-table th {
+    background: #fff none repeat scroll 0 0;
+    color: #3e467b;
+    font-weight: 700;
+}
+.privacy-table th, .privacy-table td {
+    border: 1px solid #cddc39;
+    padding: 10px;
+    vertical-align: middle;
+}
+/******************************************************************Privacy Table*/
+
 /**************************** Footer **********************************/
 .disclaimer-block {
     background: #1d1d1d none repeat scroll 0 0;

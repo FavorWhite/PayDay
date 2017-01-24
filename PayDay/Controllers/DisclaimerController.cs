@@ -7,9 +7,10 @@ using PayDay.SiteInfo;
 
 namespace PayDay.Controllers
 {
-    public class TermsOfUseController : Controller
+    public class DisclaimerController : Controller
     {
-        // GET: TermsOfUse
+
+        // GET: Disclaimer
         readonly SiteInfomation _siteInfomation = new SiteInfomation();
         public ActionResult Index()
         {
