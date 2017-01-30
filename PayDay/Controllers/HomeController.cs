@@ -19,5 +19,15 @@ namespace PayDay.Controllers
             ViewBag.SupportEmailAddress = _siteInfomation.SupportEmailAddress;
             return View();
         }
+        public ActionResult LoanForm(int Amount, string Email )
+        {
+            if (Email ==null)
+            {
+                ViewBag.Email = String.Empty;
+            }
+            ViewBag.Amount = Amount;
+            ViewBag.Email = Email;
+            return View();
+        }
     }
 }

@@ -35,13 +35,16 @@
                                 <h2 class="title-h2">How much do you need?</h2>
                             </div>
                             <div class="form-question-rectification">
-                                <h5 class="title-h5">You could get up to $5000!*</h5>
+                                <h5 class="title-h5">You could get up to $1000!*</h5>
                             </div>
-                            <div class="form">
-                                <div class="">
-                                    <img src="" alt="">
-                                </div>
-                            </div>
+                            @using (Html.BeginForm("LoanForm", "Home", FormMethod.Get))
+                            {
+                                <p>Loan Amount: </p>
+                                @Html.DropDownList("Amount",new SelectList(new int[] { 100, 200, 300, 400,500,600,700,800,900,1000 }), htmlAttributes: new { @class = "form-item" })
+                                <p>Enter Your Email: :</p>
+                                @Html.TextBox("Email", "", htmlAttributes: new { @class = "form-item" })
+                                <p><input type="submit" value="Get started" /></p>
+                            }
                         </div>
                     </div>
                 </div>

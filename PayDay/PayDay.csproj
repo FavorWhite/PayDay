@@ -161,6 +161,7 @@
     <Content Include="Views\TermsOfUse\Index.cshtml" />
     <Content Include="Views\Disclaimer\Index.cshtml" />
     <Content Include="Views\PrivacyPolicy\Index.cshtml" />
+    <Content Include="Views\Home\LoanForm.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
