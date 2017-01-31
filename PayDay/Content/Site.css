@@ -96,7 +96,7 @@ body {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 120px 0;
+    padding: 120px 0px 50px;
     margin-top: 80px;
 }
 .jumbotron-custom-disclaimer {
@@ -136,6 +136,24 @@ body {
 
 .sub-slogon {
     margin-bottom: 40px;
+}
+.form-item {
+    width: 100%;
+    border: none;
+    background-color: #f6f6f6;
+    padding: 10px 20px;
+    margin-bottom: 30px;
+}
+form p {
+    margin-bottom: 5px;
+    text-align: left;
+}
+.form-btn {
+    width: 100%;
+    border: none;
+}
+.form-item:focus {
+    background-color: rgba(205, 220, 57, 0.40);
 }
 
 .button_wrap {
@@ -184,8 +202,7 @@ body {
 
 .main-form-info-wrapper {
     background: #fff none repeat scroll 0 0;
-    height: 100%;
-    padding: 50px 40px;
+   padding: 50px 40px 75px;
 }
 
 .main-form_text {
