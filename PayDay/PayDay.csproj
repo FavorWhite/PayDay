@@ -99,6 +99,8 @@
     <Content Include="Content\images\get-now-img2.png" />
     <Content Include="Content\images\get-now-img3.png" />
     <Content Include="Content\images\how-it-works-background.jpg" />
+    <Content Include="Content\images\logo-footer-retina.png" />
+    <Content Include="Content\images\logo1-2.png" />
     <Content Include="Content\images\mainImg-disclaimer.jpg" />
     <Content Include="Content\images\mainImg-home.jpg" />
     <Content Include="Content\images\mainImg-policy.jpg" />
