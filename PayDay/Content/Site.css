@@ -65,6 +65,10 @@ body {
     z-index: 999;
 }
 
+.logo .img-responsive {
+    height: 80px;
+}
+
 .nav-menu {
     float: right;
     margin-bottom: 0;
@@ -92,23 +96,27 @@ body {
 /******************************************************************Header*/
 /**************************** Jumbotron **********************************/
 .jumbotron-custom {
-    background-image: url("../Content/images/mainimg-home.jpg"); 
+    background-image: url("../Content/images/mainimg-home.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     padding: 120px 0px 50px;
     margin-top: 80px;
 }
+
 .jumbotron-custom-disclaimer {
-        background-image: url("../Content/images/mainImg-disclaimer.jpg"); 
+    background-image: url("../Content/images/mainImg-disclaimer.jpg");
 }
+
 .jumbotron-custom-policy {
-        background-image: url("../Content/images/mainImg-policy.jpg"); 
+    background-image: url("../Content/images/mainImg-policy.jpg");
 }
+
 .jumbotron-custom-termsofuse {
-        background-image: url("../Content/images/mainImg-termsofuse.jpg"); 
+    background-image: url("../Content/images/mainImg-termsofuse.jpg");
 }
-.jumbotron-custom-disclaimer,.jumbotron-custom-policy,.jumbotron-custom-termsofuse {
+
+.jumbotron-custom-disclaimer, .jumbotron-custom-policy, .jumbotron-custom-termsofuse {
     text-align: center;
 }
 
@@ -137,21 +145,27 @@ body {
 .sub-slogon {
     margin-bottom: 40px;
 }
+
 .form-item {
-    width: 100%;
-    border: none;
     background-color: #f6f6f6;
-    padding: 10px 20px;
+    border: medium none;
+    color: #656565;
+    font-weight: 500;
     margin-bottom: 30px;
+    padding: 10px 20px;
+    width: 100%;
 }
+
 form p {
     margin-bottom: 5px;
     text-align: left;
 }
+
 .form-btn {
     width: 100%;
     border: none;
 }
+
 .form-item:focus {
     background-color: rgba(205, 220, 57, 0.40);
 }
@@ -202,7 +216,7 @@ form p {
 
 .main-form-info-wrapper {
     background: #fff none repeat scroll 0 0;
-   padding: 50px 40px 75px;
+    padding: 50px 40px 75px;
 }
 
 .main-form_text {
@@ -288,15 +302,19 @@ form p {
     color: #fff;
     text-align: center;
 }
+
 .speed-convenience-block figure {
     color: #212121;
 }
+
 .speed-convenience-step-block .title-h2 {
     color: #333;
 }
+
 .speed-convenience-step-block .get-text {
     color: #878787;
 }
+
 .get-text {
     font-size: 15px;
     line-height: 28px;
@@ -315,6 +333,7 @@ form p {
 .how-it-works-step-block {
     background-image: url('images/parallax/green-poly-background.jpg');
 }
+
 .how-it-works-block {
     background-image: url('images/parallax/how-it-works-background.jpg');
 }
@@ -326,9 +345,11 @@ form p {
 .green-triangle::after {
     background-color: #BDC651;
 }
+
 .white-triangle::after {
     background: #fff;
 }
+
 .triangle::after {
     bottom: auto;
     content: "";
@@ -351,15 +372,18 @@ form p {
 .how-it-works-list {
     text-align: left;
 }
-.how-it-works-list .title-h5 {
-    color: #fff;
-    font-size: 16px;
-    line-height: 22px;
-}
-.how-it-works-list > li {
-    padding-left: 70px;
-    position: relative;
-}
+
+    .how-it-works-list .title-h5 {
+        color: #fff;
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .how-it-works-list > li {
+        padding-left: 70px;
+        position: relative;
+    }
+
 .fa-check::before {
     border: 2px solid #cddc39;
     border-radius: 50%;
@@ -371,6 +395,7 @@ form p {
     position: absolute;
     top: 40px;
 }
+
 .fa-question::before {
     border: 2px solid #393d7d;
     border-radius: 50%;
@@ -381,12 +406,14 @@ form p {
     position: absolute;
     top: 40px;
 }
+
 .emphasized-text {
     color: #cddc39;
     text-transform: uppercase;
 }
+
 .rates-fees-block {
-        background-image: url('images/rates-fees-block.jpg');
+    background-image: url('images/rates-fees-block.jpg');
 }
 /******************************************************************Parallax*/
 /**************************** QA **********************************/
@@ -394,23 +421,22 @@ form p {
     padding: 70px 0;
     text-align: center;
 }
+
 .qa-item {
     padding: 20px 20px 20px 94px;
     position: relative;
     text-align: left;
 }
+
 .qa-title {
     font-size: 22px;
 }
+
 .qa-text {
     margin-top: 10px;
     text-indent: 19px;
 }
-/*.underline-text {
-    border-bottom: 2px solid #cddc39;
-    color: #333;
-    display: inline-block;
-}*/
+
 .underline-text {
     border-bottom: 2px solid #cddc39;
     line-height: 2;
@@ -420,10 +446,12 @@ form p {
 .rates-fees-block .underline-text {
     color: #fff;
 }
+
 .rates-fees-block .title-h5 {
     color: #cddc39;
     font-size: 16px;
 }
+
 .note-text {
     color: #bcbcbc;
     font-size: 12px;
@@ -437,18 +465,20 @@ form p {
     padding: 70px 0;
     text-align: center;
 }
+
 .policy-item {
     text-align: left;
 }
-.policy-item p {
-    text-indent: 15px;
-}
 
-.policy-item .title-h5 {
-    margin-left: 15px;
-      font-size: 16px;
-    color: #333;
-}
+    .policy-item p {
+        text-indent: 15px;
+    }
+
+    .policy-item .title-h5 {
+        margin-left: 15px;
+        font-size: 16px;
+        color: #333;
+    }
 
 /******************************************************************Lending-Policy*/
 
@@ -456,22 +486,49 @@ form p {
 .privacy-policy-block {
     padding: 70px 0;
 }
+
 .privacy-table {
     margin-bottom: 20px;
 }
-.privacy-table th {
-    background: #fff none repeat scroll 0 0;
-    color: #3e467b;
-    font-weight: 700;
-}
-.privacy-table th, .privacy-table td {
-    border: 1px solid #cddc39;
-    padding: 10px;
-    vertical-align: middle;
-}
+
+    .privacy-table th {
+        background: #fff none repeat scroll 0 0;
+        color: #3e467b;
+        font-weight: 700;
+    }
+
+    .privacy-table th, .privacy-table td {
+        border: 1px solid #cddc39;
+        padding: 10px;
+        vertical-align: middle;
+    }
 /******************************************************************Privacy Table*/
 
 /**************************** Footer **********************************/
+.to-top {
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    bottom: 103px;
+    right: 20px;
+    z-index: 9999;
+    display: none;
+    background: #cddc39;
+    color: #fff;
+    font-size: 32px;
+    cursor: pointer;
+    transition: color .3s ease-in-out, background-color .3s ease-in-out;
+}
+
+    .to-top:hover {
+        background: #3E467B;
+    }
+
+    .to-top .fa-chevron-up {
+        vertical-align: middle;
+    }
+
 .disclaimer-block {
     background: #1d1d1d none repeat scroll 0 0;
     color: #9a9a9a;
@@ -497,6 +554,10 @@ form p {
     padding: 25px 0;
 }
 
+    .footer .container {
+        position: relative;
+    }
+
 .nav-menu.footer-menu > li {
     line-height: 1;
 }
@@ -507,5 +568,120 @@ form p {
 
 .footer-site-name-block {
     color: #7c8b02;
+    bottom: 0;
+    position: absolute;
+    right: 25px;
 }
 /******************************************************************Footer*/
+
+
+
+.mobil-menu-btn .fa-bars {
+    background: #cddc39 none repeat scroll 0 0;
+    color: #fff;
+    cursor: pointer;
+    font-size: 17px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    width: 40px;
+    transition: color .3s ease-in-out, background-color .3s ease-in-out;
+}
+
+    .mobil-menu-btn .fa-bars:hover {
+        background: #212121;
+    }
+
+.mobil-menu-btn {
+    display: none;
+    text-align: right;
+    line-height: 80px;
+}
+/**************************** Media Query **********************************/
+
+/*@media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) { ... }*/
+@media (max-width:992px) {
+    .mobil-menu-btn {
+        display: inline-block;
+    }
+
+    .header .nav-menu {
+        background: #f4f4f4 none repeat scroll 0 0;
+        float: right;
+        margin-bottom: 0;
+        padding: 10px;
+        width: 100%;
+        display: none;
+    }
+
+        .header .nav-menu li {
+            display: block;
+            line-height: 52px;
+            padding: 0 10px;
+        }
+
+            .header .nav-menu li a:hover {
+                color: #fff;
+            }
+
+            .header .nav-menu li:hover {
+                background: #C0CF27;
+            }
+}
+
+@media (max-width:1024px) {
+    .header {
+        position: relative;
+    }
+
+    .jumbotron-custom {
+        margin-top: 0;
+    }
+}
+
+@media (min-width:992px) and (max-width: 1200px) {
+    .footer-menu {
+        margin-bottom: 0;
+        width: 75%;
+        float: none;
+        margin-left: 55px;
+    }
+
+    .nav-menu.footer-menu > li {
+        line-height: 21px;
+        display: block;
+        width: 50%;
+        float: left;
+    }
+}
+@media (min-width:768px) and (max-width: 992px) {
+    .footer-menu {
+        float: none;
+        margin-left: 55px;
+    }
+
+.nav-menu.footer-menu > li {
+    line-height: 22px;
+    display: block;
+}
+.footer-site-name-block {
+    left: 25px;
+}
+}
+@media (max-width:768px) {
+    .footer-menu {
+        float: none;
+        margin-left: 55px;
+    }
+
+.nav-menu.footer-menu > li {
+    line-height: 22px;
+    display: block;
+}
+.footer-site-name-block {
+    left: 25px;
+}
+}
+
+
+/******************************************************************Media Query*/
