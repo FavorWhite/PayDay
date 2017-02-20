@@ -654,34 +654,46 @@ form p {
         float: left;
     }
 }
+
 @media (min-width:768px) and (max-width: 992px) {
     .footer-menu {
         float: none;
         margin-left: 55px;
     }
 
-.nav-menu.footer-menu > li {
-    line-height: 22px;
-    display: block;
+    .nav-menu.footer-menu > li {
+        line-height: 22px;
+        display: block;
+    }
+
+    .footer-site-name-block {
+        left: 25px;
+    }
 }
-.footer-site-name-block {
-    left: 25px;
-}
-}
+
 @media (max-width:768px) {
     .footer-menu {
         float: none;
-        margin-left: 55px;
+        text-align: center;
+        margin: 25px 0 15px;
+        font-size: 17px;
     }
 
-.nav-menu.footer-menu > li {
-    line-height: 22px;
-    display: block;
+    .nav-menu.footer-menu > li {
+        line-height: 26px;
+        display: block;
+    }
+
+    .footer-site-name-block {
+        color: #7c8b02;
+        bottom: 0;
+        right: 25px;
+        display: block;
+        text-align: center;
+        position: initial;
+    }
 }
-.footer-site-name-block {
-    left: 25px;
-}
-}
+
 
 
 /******************************************************************Media Query*/

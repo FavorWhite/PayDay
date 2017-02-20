@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <title>@ViewBag.Title </title>
     <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
     <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <link href="~/Content/font-awesome.min.css" rel="stylesheet" type="text/css" />
@@ -69,14 +69,13 @@
                         <li>@Html.ActionLink("How it works?", "Index", "Home", "", "", "how-it-works", new { id = "" }, new { id = "", @class = "" })</li>
                         <li>@Html.ActionLink("Rates & Fees", "Index", "Home", "", "", "rates-fees", new { id = "" }, new { id = "", @class = "" })</li>
                         <li>@Html.ActionLink("Lending Policy", "Index", "Home", "", "", "lending-policy", new { id = "" }, new { id = "", @class = "" })</li>
-
                         <li>@Html.ActionLink("Terms of Use", "Index", "TermsOfUse")</li>
                         <li>@Html.ActionLink("Disclaimer", "Index", "Disclaimer")</li>
                         <li>@Html.ActionLink("Privacy Policy", "Index", "PrivacyPolicy")</li>
                     </ul>
                 </div>
                 <div class="footer-site-name-block">
-                    &copy; @DateTime.Now.Year - FindLenders.us
+                    &copy; @DateTime.Now.Year - @ViewBag.SiteAddress
                 </div>
             </div>
         </div>
