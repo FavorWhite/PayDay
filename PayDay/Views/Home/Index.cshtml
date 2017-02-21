@@ -1,6 +1,6 @@
 ﻿
 @{
-    ViewBag.Title = "Home";
+    ViewBag.Title = "Find Lenders";
 }
 
 <div class="jumbotron-custom">
@@ -15,14 +15,10 @@
                         <h4 class="title-h4">is now as easy as spending </h4>
                     </div>
                     <div class="button_wrap">
-                        <a class="style-button style-button-invert" href="#">
-                            <span>How it works?</span>
-                        </a>
+                        @Html.ActionLink("How it works?", "Index", "Home", "", "", "how-it-works", new { id = "" }, new { id = "", @class = "style-button style-button-invert" })
                     </div>
                     <div class="button_wrap">
-                        <a class="style-button" href="#">
-                            <span>Why PayDay loans</span>
-                        </a>
+                        @Html.ActionLink("Why Find Lenders", "Index", "Home", "", "", "why-FindLenders", new { id = "" }, new { id = "", @class = "style-button" })
                     </div>
                 </div>
             </div>
@@ -40,7 +36,7 @@
                             @using (Html.BeginForm("LoanForm", "Home", FormMethod.Get))
                             {
                                 <p>Loan Amount: </p>
-                                @Html.DropDownList("Amount",new SelectList(new int[] { 100, 200, 300, 400,500,600,700,800,900,1000 }), htmlAttributes: new { @class = "form-item" })
+                                @Html.DropDownList("RequestedAmount",(List<SelectListItem>)ViewBag.LoanAmount, htmlAttributes: new { @class = "form-item" })
                                 <p>Enter Your Email: :</p>
                                 @Html.TextBox("Email", "", htmlAttributes: new { @class = "form-item" })
                                 <input class="style-button form-btn" type="submit" value="Get started" />
@@ -53,7 +49,7 @@
         </div>
     </div>
 </div>
-<div class="container offers-block">
+<div class="container offers-block" id="why-FindLenders">
     <div class="row">
         <div class="col-md-4">
             <figure class="offers-item">
@@ -102,12 +98,12 @@
         <div class="container">
             <figure class="row">
                 <div class="col-md-6">
-                    <img src="~/Content/images/get-now-img.png" />
+                    <img class="img-responsive step-img" src="~/Content/images/get-now-img.png" />
                 </div>
                 <figcaption class="col-md-6">
                     <h2 class="title-h2"> Fill in an application form on our website </h2>
                     <div class="get-text">Make a request on our website and wait for response to e-mail within 15-30 minutes from the time of the request during business hours.</div>
-                    <a class="style-button style-button-invert white-hover-button">Go to the form</a>
+                    @Html.ActionLink("Go to the form", "LoanForm", "Home", new { id = "" }, new { id = "", @class = "style-button style-button-invert white-hover-button" })
                 </figcaption>
 
             </figure>
@@ -119,14 +115,14 @@
     <div class="parallax__layer">
         <div class="container">
             <figure class="row">
+                <div class="col-md-6">
+                    <img class="img-responsive step-img" src="~/Content/images/get-now-img3.png" />
+                </div>
                 <figcaption class="col-md-6">
                     <h2 class="title-h2"> Speed &amp; Convenience </h2>
                     <div class="get-text">We can rapidly connect you with a lender. After submitting all the information we require, you may be redirected to a specific lender's website to review the terms of the loan, and if accepted, the funds will be deposited directly into your bank account. Subject to lender approval.</div>
-                    <a class="style-button style-button-invert">Go to the form</a>
+                    @Html.ActionLink("Go to the form", "LoanForm", "Home", new { id = "" }, new { id = "", @class = "style-button style-button-invert" })
                 </figcaption>
-                <div class="col-md-6">
-                    <img src="~/Content/images/get-now-img3.png" />
-                </div>
             </figure>
         </div>
     </div>
@@ -137,12 +133,12 @@
         <div class="container">
             <figure class="row">
                 <div class="col-md-6">
-                    <img src="~/Content/images/get-now-img2.png" />
+                    <img class="img-responsive step-img" src="~/Content/images/get-now-img2.png" />
                 </div>
                 <figcaption class="col-md-6">
                     <h2 class="title-h2"> Receiving the loan money</h2>
                     <div class="get-text">Once the lender approves your loan and you accept the loan terms, your loan will be deposited directly in your bank account, usually as soon as the next day.</div>
-                    <a class="style-button white-hover-button">How it works?</a>
+                    @Html.ActionLink("How it works?", "Index", "Home", "", "", "how-it-works", new { id = "" }, new { id = "", @class = "style-button white-hover-button" })
                 </figcaption>
 
             </figure>
@@ -202,7 +198,7 @@
         </div>
     </div>
 </div>
-<div class="container qa-block" >
+<div class="container qa-block">
     <div class="row">
         <h2 class="title-h2">Frequently Asked Questions</h2>
         <div class="col-md-6">
@@ -267,7 +263,7 @@
         <h2 class="title-h2">Policy on Responsible Lending</h2>
         <div class="col-md-12">
             <div class="policy-item">
-                
+
                 <div class="get-text">
                     <p>@ViewBag.SiteAddress wants consumers to be educated, make smart financial decisions, and to be protected from malicious personal consumer lenders and other unsavory businesses that engage in unlawful and unethical lending practices. </p>
                     <h5 class="title-h5"><span class="underline-text">Trust and Truth </span></h5>

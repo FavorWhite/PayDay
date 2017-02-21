@@ -146,61 +146,48 @@ body {
     margin-bottom: 40px;
 }
 
-.form-item {
-    background-color: #f6f6f6;
-    border: medium none;
-    color: #656565;
-    font-weight: 500;
-    margin-bottom: 30px;
-    padding: 10px 20px;
-    width: 100%;
-}
-
-form p {
-    margin-bottom: 5px;
-    text-align: left;
-}
-
-.form-btn {
-    width: 100%;
-    border: none;
-}
-
-.form-item:focus {
-    background-color: rgba(205, 220, 57, 0.40);
-}
 
 .button_wrap {
     display: inline-block;
     padding: 20px 20px 0 0;
 }
 
-.style-button {
-    background-color: #3e467b;
-    display: inline-block;
-    border-radius: 25px;
-    color: #fff;
-    display: inline-block;
-    font-weight: 600;
-    line-height: 50px;
-    padding: 0 33px;
-    text-transform: uppercase;
-    cursor: pointer;
-    transition: all 0.3s ease-in-out 0s;
+.style-button, .b2c-btn, a.b2c-btn {
+    background: #3e467b !important;
+    display: inline-block !important;
+    border-radius: 25px !important;
+    color: #fff !important;
+    display: inline-block !important;
+    font-weight: 600 !important;
+    line-height: 50px !important;
+    padding: 0 33px !important;
+    text-transform: uppercase !important;
+    cursor: pointer !important;
+    transition: all 0.3s ease-in-out 0s !important;
 }
 
-    .style-button:hover {
-        background-color: #CDDC39;
-        text-decoration: none;
-        color: #fff;
+.b2c-btn, a.b2c-btn {
+    border: none !important;
+    height: 50px !important;
+    text-shadow: 0 0 0 !important;
+
+}
+.b2c-btn::after {
+    display: none !important;
+}
+
+    .style-button:hover, .b2c-btn:hover, a.b2c-btn:hover {
+        background: #CDDC39 !important;
+        text-decoration: none !important;
+        color: #fff !important;
     }
 
-.style-button-invert {
-    background-color: #CDDC39;
+.style-button-invert, .b2c-btn, a.b2c-btn {
+    background: #CDDC39 !important;
 }
 
-    .style-button-invert:hover {
-        background-color: #3e467b;
+    .style-button-invert:hover, .b2c-btn:hover, a.b2c-btn:hover {
+        background: #3e467b !important;
     }
 
 .white-hover-button:hover {
@@ -238,7 +225,7 @@ form p {
 /******************************************************************Jumbotron*/
 /**************************** Offers **********************************/
 .container.offers-block {
-    padding: 60px 0 70px;
+    padding: 60px 15px 70px;
 }
 
 .offers-img-wrapper {
@@ -313,6 +300,10 @@ form p {
 
 .speed-convenience-step-block .get-text {
     color: #878787;
+}
+
+.speed-convenience-step-block .step-img, .speed-convenience-step-block .col-md-6 {
+    float: right;
 }
 
 .get-text {
@@ -575,6 +566,63 @@ form p {
 /******************************************************************Footer*/
 
 
+/**************************** Form **********************************/
+.form-item, .b2c-row select, .b2c-row input[type="email"], .b2c-row input[type="number"], .b2c-row input[type="text"], .b2c-row input[type="tel"] {
+    background-color: #f6f6f6 !important;
+    border: medium none !important;
+    color: #656565 !important;
+    font-weight: 500 !important;
+    margin-bottom: 30px !important;
+    padding: 10px 20px !important;
+    width: 100% !important;
+    height: 40px !important;
+}
+
+.tip, .b2c-progress-bar-wrap, .b2c-norton-top {
+    display: none !important;
+}
+
+.b2c-disclimer {
+    background: #f6f6f6 !important;
+}
+
+form p {
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+.form-btn {
+    width: 100%;
+    border: none;
+}
+
+.form-item:focus {
+    background-color: rgba(205, 220, 57, 0.40);
+}
+
+.b2cform {
+    margin: 25px 0 !important;
+}
+
+.b2c-form-container {
+    max-width: 100% !important;
+}
+
+p.b2c-form-title {
+    color: #3e467b !important;
+    background: #fff !important;
+    font-size: 22px !important;
+}
+
+.b2c-form-title span {
+    background: none !important;
+    color: #cddc39 !important;
+    border-top: none !important;
+    border-left: none !important;
+    border-right: none !important;
+    border-radius: 0 !important;
+}
+/******************************************************************Form*/
 
 .mobil-menu-btn .fa-bars {
     background: #cddc39 none repeat scroll 0 0;
@@ -600,7 +648,41 @@ form p {
 /**************************** Media Query **********************************/
 
 /*@media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) { ... }*/
-@media (max-width:992px) {
+@media (max-width:991px) {
+    .main-form-wrapper {
+        height: auto;
+        margin: 0 0 50px;
+    }
+
+    .jumbotron-custom {
+        padding: 0px 0px 0px;
+    }
+
+    .jumbotron-slogon {
+        padding: 80px 0 50px;
+    }
+
+    .jumbotron-content-wrapper {
+        text-align: center;
+    }
+
+    .speed-convenience-step-block .step-img, .speed-convenience-step-block .col-md-6 {
+        float: none;
+    }
+
+    .img-responsive.step-img {
+        margin: 0 auto;
+        max-width: 250px;
+    }
+
+    .title-h1 {
+        font-size: 60px;
+    }
+
+    .sub-slogon .title-h4 {
+        font-size: 22px;
+    }
+
     .mobil-menu-btn {
         display: inline-block;
     }
@@ -672,6 +754,18 @@ form p {
 }
 
 @media (max-width:768px) {
+    .main-form-wrapper {
+        border: none;
+    }
+
+    .main-form-info-wrapper {
+        padding: 20px 25px 40px;
+    }
+
+    .img-responsive.step-img {
+        max-width: 200px;
+    }
+
     .footer-menu {
         float: none;
         text-align: center;
@@ -694,6 +788,11 @@ form p {
     }
 }
 
+@media (max-width:500px) {
+    .img-responsive.step-img {
+        max-width: 175px;
+    }
+}
 
 
 /******************************************************************Media Query*/
