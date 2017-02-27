@@ -170,11 +170,11 @@ body {
     border: none !important;
     height: 50px !important;
     text-shadow: 0 0 0 !important;
+}
 
-}
-.b2c-btn::after {
-    display: none !important;
-}
+    .b2c-btn::after {
+        display: none !important;
+    }
 
     .style-button:hover, .b2c-btn:hover, a.b2c-btn:hover {
         background: #CDDC39 !important;
@@ -719,6 +719,10 @@ p.b2c-form-title {
     .jumbotron-custom {
         margin-top: 0;
     }
+
+    .privacy-policy-block {
+        padding: 15px 0;
+    }
 }
 
 @media (min-width:992px) and (max-width: 1200px) {
@@ -750,6 +754,8 @@ p.b2c-form-title {
 
     .footer-site-name-block {
         left: 25px;
+        right: auto;
+        display: inline-block;
     }
 }
 
@@ -785,6 +791,10 @@ p.b2c-form-title {
         display: block;
         text-align: center;
         position: initial;
+    }
+
+    .footer-logo-block .img-responsive {
+        margin: 0 auto;
     }
 }
 

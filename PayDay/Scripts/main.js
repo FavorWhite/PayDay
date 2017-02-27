@@ -18,7 +18,5 @@
         $(".header .nav-menu").toggle(300);
     });
     ///
-    function() {
-        lmpost.collect("interaction", "focus", $(this).attr("name"))
-    }
+
 });
